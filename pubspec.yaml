@@ -34,7 +34,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   bloc: ^8.1.0
   flutter_bloc: ^8.1.1
-  side_navigation: ^1.0.4
+  flutter_dotenv: ^5.0.2
+  equatable:
+  http:
+
 
 dev_dependencies:
   flutter_test:
