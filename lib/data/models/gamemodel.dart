@@ -17,7 +17,7 @@ class Gamemodel {
     return Gamemodel(
         id: json["id"],
         name: json['name'],
-        image: json['image'],
+        image: json["background_image"],
         rating: json['rating']);
   }
 }

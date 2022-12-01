@@ -11,8 +11,12 @@ class Tabbody extends StatefulWidget {
 class _TabbodyState extends State<Tabbody> {
   @override
   Widget build(BuildContext context) {
-    return TabBarView(
-        controller: widget.control,
-        children: const [ThisWeek(), Best(), Popular()]);
+    return SizedBox(
+      height: 20,
+      child: TabBarView(
+          viewportFraction: 0.8,
+          controller: widget.control,
+          children: const [ThisWeek(), Best(), Popular()]),
+    );
   }
 }
