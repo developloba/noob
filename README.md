@@ -1,3 +1,4 @@
+#Noob
 Noob is video game discovery platform where you can find new games especially for beginners, hence the name noob.
 You can see what you friends are playing, see recommendations and find your next favourite game
 view full design here https://www.behance.net/gallery/154908039/Noob-Gaming-app
