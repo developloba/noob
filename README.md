@@ -1,16 +1,4 @@
-# noob
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Noob is video game discovery platform where you can find new games especially for beginners, hence the name noob.
+You can see what you friends are playing, see recommendations and find your next favourite game
+view full design here https://www.behance.net/gallery/154908039/Noob-Gaming-app
+![flutter_01](https://user-images.githubusercontent.com/95104961/205228753-16c35fb4-5dcd-4363-9dbe-267f03a79463.png)
