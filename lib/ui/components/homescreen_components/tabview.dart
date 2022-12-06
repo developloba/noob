@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:noob/ui/components/homescreen_components/this_week.dart';
 import 'package:noob/ui/components/views.dart';
 
 class Tabbody extends StatefulWidget {
@@ -12,11 +13,12 @@ class _TabbodyState extends State<Tabbody> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 20,
+      height: 3000,
+      width: MediaQuery.of(context).size.width,
       child: TabBarView(
-          viewportFraction: 0.8,
+          clipBehavior: Clip.none,
           controller: widget.control,
-          children: const [ThisWeek(), Best(), Popular()]),
+          children: const [Thisweek(), Best(), Popular()]),
     );
   }
 }

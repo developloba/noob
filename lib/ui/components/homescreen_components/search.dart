@@ -15,13 +15,12 @@ class Search extends StatelessWidget {
         prefixIcon: const Icon(Icons.search),
         fillColor: const Color.fromARGB(61, 224, 224, 224),
         enabledBorder: OutlineInputBorder(
-            borderSide:
-                const BorderSide(color: Color.fromARGB(61, 224, 224, 224)),
+            borderSide: const BorderSide(color: Colors.transparent),
             borderRadius: BorderRadius.circular(30)),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
           borderSide: const BorderSide(
-            color: Color.fromARGB(61, 224, 224, 224),
+            color: Colors.transparent,
           ),
         ),
       ),

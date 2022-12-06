@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:noob/ui/components/homescreen_components/search.dart';
-import 'package:noob/ui/components/homescreen_components/tabbar.dart';
 
 import 'package:noob/ui/utils/constants.dart';
 
@@ -20,10 +19,11 @@ class Appbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAppBar(
       title: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
         children: const [
           SizedBox(
             width: 400,
-            height: 40,
+            height: 50,
             child: Search(),
           )
         ],
@@ -57,9 +57,25 @@ class Appbar extends StatelessWidget {
         ],
       ),
       bottom: PreferredSize(
-        preferredSize: Size(width, 0),
-        child: Noobbar(controls: controls),
-      ),
+          preferredSize: Size(width, 0),
+          child: Container(
+            color: Colors.transparent,
+            child: TabBar(
+              controller: controls,
+              indicatorWeight: 5,
+              isScrollable: true,
+              labelPadding:
+                  const EdgeInsets.symmetric(horizontal: 70, vertical: 20),
+              indicatorColor: kblue,
+              indicatorSize: TabBarIndicatorSize.label,
+              tabs: const [
+                Tab(text: 'This week'),
+                Tab(text: 'Best of the year'),
+                Tab(text: 'Popular in 2021')
+              ],
+              labelStyle: ktitleMedium,
+            ),
+          )),
     );
   }
 }

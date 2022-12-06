@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:noob/ui/components/homescreen_components/homescreen.dart';
+import 'package:noob/ui/screens/homescreen.dart';
 import 'package:noob/ui/components/sidebar.dart';
 
 class Base extends StatelessWidget {
@@ -11,9 +11,13 @@ class Base extends StatelessWidget {
       body: Row(
         children: const [
           Expanded(
+            flex: 1,
             child: Sidebar(),
           ),
-          Homescreen()
+          Expanded(
+            flex: 4,
+            child: Homescreen(),
+          )
         ],
       ),
     );
